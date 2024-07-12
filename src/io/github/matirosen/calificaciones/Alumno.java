@@ -18,7 +18,7 @@ public class Alumno {
         this.nombre = nombre;
     }
 
-    private void validarNota(double nota) {
+    private void validarNota(double nota) throws IllegalArgumentException {
         if (nota < 0 || nota > 10) {
             throw new IllegalArgumentException(ERROR_NOTA);
         }
